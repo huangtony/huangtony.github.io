@@ -1,0 +1,22 @@
+<footer class="footer">
+	<div class="container">
+		<section class="contact">
+			<h2>Contact</h2>
+			<a title="{{ site.email }}" href="mailto:{{ site.email }}">{{ site.email }}</a>
+		</section>
+		<section class="follow">
+			<h2>Follow</h2>
+			<ul>
+				{% if site.linkedin != "" %}
+					<li><a title="LinkedIn" href="{{ site.linkedin }}" target="_blank">LinkedIn</a></li>
+				{% endif %}
+				{% if site.bitbucket != "" %}
+					<li><a title="Bitbucket" href="{{ site.bitbucket }}" target="_blank">Bitbucket</a></li>
+				{% endif %}
+				{% if site.github != "" %}
+					<li><a title="Github" href="{{ site.github }}" target="_blank">Github</a></li>
+				{% endif %}
+			</ul>
+		</section>
+	</div>
+</footer>
